@@ -1,112 +1,44 @@
-# 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
 
-# number = 5
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
 
-# if number == 10
-#   p 0
-# else
-#   p -1
+# puts "Please enter a word: "
+# word = gets.chomp
+
+# p word.upcase
+
+# 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
+
+# puts "Enter a big number: "
+
+# number = gets.chomp
+# if number.to_i > 100
+#   p "That's a big number!"
 # end
 
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
 
-# 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+# puts "Enter two numbers: "
+# number1 = gets.chomp
+# number2 = gets.chomp
 
-# number = 16
-# if number < 10
-#   p -1
-# elsif number > 10
-#   p 1
-# elsif number == 10
-#   p 0
-# end
+# p number1.to_i + number2.to_i
 
-# 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
-
-# number1 = 13
-# number2 = 25
-
-# if number1 && number2 < 10
-#   p 1
-# else 
-#   p 0
-# end
-
-# 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
-
-# number = 16000
-# if number < 9000
-#   p 1
-# else
-#   p -1
-# end
-
-# 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
-
-# number = 19
-# if number < 10
-#   p 9
-# elsif number < 20
-#   p 19
-# elsif number < 30
-#   p 29
-# else 
-#   p -1
-# end
-
-# 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
-
-# num1 = 23
-# num2 = 14
-
-# if num1 && num2 > 10
-#   p 100
-# else
-#   p -100
-# end
-
-# 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
-
-# num = -1
-# if num < 0
-#   p 1776
-# else
-#   p 1979
-# end
-
-# 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
-
-# num = 100
-# if num == 100
-#   p 100
-# elsif num == 99
-#   p 99
-# else
-#   p 0
-# end
+# 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
 
 
-# 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
-# num1 = -1
-# num2 = 33
-# if num1 < 0 && num2 > 0
-#   p 1
-# else
-#   p 0
-# end
+# puts "Enter a number: "
+# number = gets.chomp
+# p number.to_i * 10
 
-# 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
-# num = 56
-# if num > 80
-#   p 5
-# elsif num > 60
-#   p 4
-# elsif num > 40
-#   p 3
-# elsif num > 20
-#   p 2
-# else 
-#   p 1
-# end
+# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+# 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+
+# 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
