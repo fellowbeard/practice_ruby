@@ -1,43 +1,80 @@
-# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
 
-# array = ["this", "that", "other"]
-# array << "poop"
-# array << "pee"
-# p array
-
-# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
-
-# array = ["a", "b", "c", "d"]
-# array[1] = 6
-# p array
-
-# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
-
-# array = [1,2,3,4,5]
-# index = 0
-# while index < array.length
-#   p array[index]
-#   index += 1
+# def double(number)
+#   return number * 2
 # end
 
-# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+# p double(6)
 
-# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
-# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
 
-# array = ["Becky", "Susan", "Todd"]
-# index = 0
-# while index < array.length
-#   puts array[index]
-#   index += 1
+# def capitalize(word)
+#   return word.upcase
 # end
 
-# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+# p capitalize("poop")
 
-# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
-# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+# def add_num(num1, num2)
+#   return num1 - num2
+# end
 
-# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+# p add_num(3, 6)
 
+# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+# def double(num)
+#   num * num
+# end
+
+# p double(6)
+
+# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+
+# def first_letter(word)
+#   word[0]
+# end
+
+# p first_letter("shit")
+
+# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+# def split(word1, word2, word3)
+#   "#{word1}, #{word2}, #{word3}"
+# end
+
+# p split("poop", "pee", "diarrhea")
+
+# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+
+# def string(number)
+#   number.to_s
+# end
+
+# p string(8)
+
+# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+# def repeat(word)
+#   word * 5
+# end
+
+# p repeat("poop")
+
+# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+# def average(num1, num2, num3)
+#   (num1 + num2 + num3) / 3
+# end
+
+# p average(3, 6, 9)
+
+# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+# def increase(number)
+#   (number * 10) + 30
+# end
+
+# p increase(25)
