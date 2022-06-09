@@ -323,4 +323,145 @@
 # fb(100)
 
 
+# You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
 
+# Input:
+
+# First argument: ["a", "e", "i", "o", "u"]
+# Second argument: 1
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+
+# def makehash(array)
+#   array_hash = {}
+#   index = 0
+#   while index < array.length
+#     key = array[index]
+#     value = 1
+#     array_hash[key] = value
+#     index += 1
+#   end
+#   return array_hash
+# end
+
+# p makehash(["a", "e", "i", "o", "u"])
+
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+
+# def transform(hash)
+#   array = []
+
+#   hash.each do |key, value|
+#     array << key
+#     array << value
+#   end
+#   return array
+# end
+
+# p transform({"a" => 1, "b" => 2, "c" => 3, "d" => 4})
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+
+# def yummy(hash)
+#   total = 0
+#   hash.map do |key, value|
+#     total += value
+#   end
+#   return total
+# end
+
+# p yummy({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+
+
+# Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
+
+# Input: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+# ]
+
+# Output: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# ]
+
+# def more_than(array)
+#   new_array = []
+#   index = 0
+#   while index < array.length
+#     if array[index][:likes] >= 1000
+#       new_array << array[index]
+#     end
+#     index += 1
+#   end
+#   return new_array
+# end
+
+# p more_than([{title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+#   {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+#   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+#   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+#   ])
+
+# Given a DNA strand, return its RNA complement (per RNA transcription).
+
+# Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+# Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+# G becomes C
+# C becomes G
+# T becomes A
+# A becomes U
+
+# So based on all this, here's a sample input/output:
+
+# Input: 'ACGTGGTCTTAA'
+# Output: 'UGCACCAGAAUU'
+
+def transform(string)
+  hash = {}
+  new_string = "" 
+  index = 0
+  while index < string.length
+    key = string[index]
+    if key == "A"
+      value = "U"
+      new_string << value
+    elsif key == "C"
+      value = "G"
+      new_string << value
+    elsif key == "G"
+      value = "C"
+      new_string << value
+    else value = "A"
+      new_string << value
+    end
+      hash[key] = value
+    index += 1
+  end 
+  return new_string
+end
+
+p transform("ACGTGGTCTTAA")
