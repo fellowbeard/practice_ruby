@@ -197,3 +197,130 @@
   
 # end
 
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+# string = "abcdefghhijkkloooop"
+
+# def dup(string)
+#   index = 0
+#   while index < string.length
+#     if string[index] == string[(index + 1)]
+#       return string[index]
+#     end
+#     index += 1
+#   end
+# end
+
+# p dup("abcdefghhijkkloooop")
+
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# def pal(string)
+#   new_string = ""
+#   index1 = -1
+#   index2 = 0
+#   while index2 < string.length
+#     new_string = new_string + string[index1]
+#     index2 += 1
+#     index1 -= 1
+#   end
+#   if new_string == string
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+# p pal("baloney")
+
+# Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# def compare(string1, string2)
+#   index = 0
+#   counter = 0
+#   while index < string1.length
+#     if string1[index] != string2[index]
+#       counter += 1
+#     end
+#     index += 1
+#   end
+#   return counter
+# end
+
+# p compare("ABCDEFG", "ABCXEOG")
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+# def shuffle(word)
+#    new_words = word.split()
+#    new_array = []
+#    index1 = -1
+#    index2 = 0
+#    while index2 < new_words.length
+#     new_array << new_words[index1]
+#     index2 += 1
+#     index1 -= 1
+#    end
+#    return new_array.join(" ")    
+# end
+
+# p shuffle("popcorn is so cool isn’t it yeah i thought so")
+
+# Write a function that returns whether a given number is a prime number.
+
+# def prime(number)
+#   index = 2
+#   while index <= number
+#     is_prime = true
+#     index.times do |n|
+#       if n > 1 && index % n == 0 && n != index
+#         is_prime = false
+#       end
+#     end
+#     index += 1
+#   end
+#   return is_prime
+# end
+
+# p prime(7)
+
+# Write a function that prints out every number from 1 to N, with the following exceptions:
+
+# If the number is divisible by 3, print out "FIZZ".
+# If the number is divisible by 5, print out "BUZZ".
+# If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
+
+# def fb(number)
+#   index = 1
+#   number.times do
+#     if index % 3 == 0 && index % 5 == 0
+#       p "FIZZBUZZ"
+#     elsif index % 3 == 0
+#       p "FIZZ"
+#     elsif index % 5 == 0
+#       p "BUZZ"
+#     else
+#       p index
+#     end
+#     index += 1
+#   end
+# end
+
+# fb(100)
+
+
+
