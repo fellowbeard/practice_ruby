@@ -440,28 +440,97 @@
 # Input: 'ACGTGGTCTTAA'
 # Output: 'UGCACCAGAAUU'
 
-def transform(string)
-  hash = {}
-  new_string = "" 
-  index = 0
-  while index < string.length
-    key = string[index]
-    if key == "A"
-      value = "U"
-      new_string << value
-    elsif key == "C"
-      value = "G"
-      new_string << value
-    elsif key == "G"
-      value = "C"
-      new_string << value
-    else value = "A"
-      new_string << value
-    end
-      hash[key] = value
-    index += 1
-  end 
-  return new_string
-end
+# def transform(string)
+#   hash = {}
+#   new_string = "" 
+#   index = 0
+#   while index < string.length
+#     key = string[index]
+#     if key == "A"
+#       value = "U"
+#       new_string << value
+#     elsif key == "C"
+#       value = "G"
+#       new_string << value
+#     elsif key == "G"
+#       value = "C"
+#       new_string << value
+#     else value = "A"
+#       new_string << value
+#     end
+#       hash[key] = value
+#     index += 1
+#   end 
+#   return new_string
+# end
 
-p transform("ACGTGGTCTTAA")
+# p transform("ACGTGGTCTTAA")
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def switch(hash)
+#   new_hash = {}
+#   hash.map do |key, value|
+#     new_hash[value] = key
+#   end
+#   return new_hash
+# end
+
+# p switch({"a" => 1, "b" => 2, "c" => 3})
+
+
+
+# You are given a hash in format #A, and you are to return the same data as a hash using format #B, as specified below:
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+
+
+
+# def switch(hash)
+#   new_hash = {}
+#   hash.map do |key, value|
+#     new_hash[value] = key
+    
+#   end
+#   return new_hash
+# end
+
+# p switch({
+#   1 => ["A", "E", "I", "O", "U"]
+#   })
+
+# def convert_hash(hash)
+#   new_hash = {}
+#   hash.each do |k,v|
+#     i = 0
+#     while i < v.length
+#       key = v[i].downcase
+#       value = 1
+#       new_hash[key] = value
+#       i += 1
+#     end
+#   end
+#   p new_hash
+# end
+# convert_hash({
+#   1 => ["A", "E", "I", "O", "U"]
+#   }
+#   )
