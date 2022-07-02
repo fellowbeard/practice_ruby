@@ -534,3 +534,204 @@
 #   1 => ["A", "E", "I", "O", "U"]
 #   }
 #   )
+
+# Given a list of books provided in this format:
+
+# [
+# {title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+# {title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+# {title: "1984", author: "George Orwell", year: 1949 },
+# {title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+# {title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+# {title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+# {title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 }
+# ]
+
+# return the data in this new author-centric format:
+
+# { "J. R. R. Tolkien" => [
+# {title: "The Lord of the Rings", year: 1954 },
+# {title: "The Hobbit", year: 1937 },
+# {title: "The Two Towers", year: 1954 }
+# ],
+# "Harper Lee" => [
+# {title: "To Kill a Mockingbird", year: 1960 },
+# {title: "Go Set a Watchman", year: 2015 }
+# ],
+# "George Orwell" => [
+# {title: "1984", year: 1949 }
+# ],
+# "F. Scott Fitzgerald" => [
+# {title: "The Great Gatsby", year: 1925 }
+# ]
+# }
+
+# def author(hash)
+#   new_array = []
+#   new_hash = {}
+#     i = 0
+#     while i < hash.length
+#       key = hash[i][:author]
+#       title = hash[i][:title]
+#       year = hash[i][:year]
+#       # hash.each do |k, v|
+
+#     i += 1
+#     p new_array
+#   end
+
+# def author(hash)
+#   new_array = []
+#   new_hash = {}
+#     i = 0
+#     hash.each do |k, v|
+#       k = hash[i][:author]
+#       v = hash[i][:title][:year]
+            
+#       i += 1
+#     end
+#     p v
+  
+# end
+
+# author([
+#   {title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+#   {title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+#   {title: "1984", author: "George Orwell", year: 1949 },
+#   {title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+#   {title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+#   {title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+#   {title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 }
+#   ])
+
+
+
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+
+# Example 3: 
+
+# Input: ["stair","stare","stranded"]
+# Output: "st"
+
+# write a method that loops
+# while loop
+# two indexes for comparison
+# loop within a loop
+# if the first two characters are the same, return first two characters
+
+# def compare(array)
+#   index = 0
+#   empty_string = ""
+#   while index < array.length
+#     index2 = 0
+#     while index2 < array.length
+#       if array[0][0] == array[0][0]
+#         empty_string << array[0][0]
+#       end
+#       index += 1
+#     end
+#   end
+#   p empty_string
+# end
+
+# compare(["flower","flow","flight"])
+# compare(["dog","racecar","car"])
+# compare(["stair","stare","stranded"])
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Input: {"margarita" => 6, "gimlet" => 12, "seltzer" => 2, "screwdriver" => 7, "vodkasoda" => 6}
+
+# Output: 33
+
+# Input: {"margarita" => 6, "gimlet" => 12, "seltzer" => 2, "screwdriver" => 7, "vodkasoda" => "dailyspecial"}
+
+# Output: 33
+
+# pull out the value for each key
+# add the values together
+# create a variable to hold values
+
+# def total(hash)
+#   total = 0
+#   hash.map do |key, value|
+    
+#     total += value.to_i
+    
+#   end
+#   return total
+# end
+
+# p total({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
+# p total({"margarita" => 6, "gimlet" => 12, "seltzer" => 2, "screwdriver" => 7, "vodkasoda" => 6})
+# p total({"margarita" => 6, "gimlet" => 12, "seltzer" => 2, "screwdriver" => 7, "vodkasoda" => "dailyspecial"})
+
+# Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
+
+# For example, given this array of posts (note that the submitted_by is an id number):
+
+# [
+# {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+# ]
+
+# And this hash of users (the key is the id number and the value is the user's real name):
+
+# users = {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."}
+
+# Return the array of posts as follows:
+
+# [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+# ]
+
+def roman_to_int(s)
+  roman_nums = {
+      "I" => 1,
+      "V" => 5,
+      "X" => 10,
+      "L" => 50,
+      "C" => 100,
+      "D" => 500,
+      "M" => 1000
+  }
+  string = s.split("")
+  num_values = []
+  string.each do |char|
+      num_values << roman_nums[char]
+  end
+  total = 0
+  num_values.each_with_index do |num, index|
+    if num_values[index + 1] && num >= num_values[index + 1]
+        total += num
+    else
+        total -= num 
+    end
+  end
+  total
+end
+p roman_to_int("MCMXCIV")
+
+
