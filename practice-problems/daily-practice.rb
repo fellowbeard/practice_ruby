@@ -209,17 +209,42 @@
 #   p -1
 # end
 
-# 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
 
-# 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
+# puts "Enter a word:"
+# word = gets.chomp
+# p word.upcase 
 
-# 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
+# 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
 
-# 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
+# puts "Enter a number:"
+# num = gets.chomp
+# if num.to_i > 100
+#   puts "That's a big number!"
+# end
 
-# 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
 
-# 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+# puts "Enter two numbers: "
+# num1 = gets.chomp
+# num2 = gets.chomp
+# p num1.to_i + num2.to_i  
+
+# 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
+
+# puts "Enter a word:"
+# word = gets.chomp.reverse
+# p word
+
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
 
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
+# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+# 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+
+# 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
