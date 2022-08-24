@@ -236,15 +236,210 @@
 # word = gets.chomp.reverse
 # p word
 
-# 5. Write a program that asks the user to enter a number, then prints the number times 10.
+
+# 1. Write a while loop to print the numbers 1 through 10.
+
+# number = 1
+# while number <= 10
+#   p number
+#   number += 1
+# end
+
+# 2. Write a while loop that prints the word "hello" 5 times.
+
+# index = 0
+# while index < 5
+#   puts "hello"
+#   index += 1
+# end
+
+# 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+# while true
+#   puts "Enter a word: "
+#   word = gets.chomp
+#   if word == "stop"
+#     break
+#   end
+# end
 
 
-# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+# 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
-# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+# number = 0
+# while number <= 100
+#   puts number
+#   number += 1
+# end
 
-# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+# 5. Write a while loop that prints the number 9000 ten times.
 
-# 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+# i = 0
+# while i < 10
+#   puts 9000
+#   i += 1
+# end
 
-# 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+
+# 6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+# while true
+#   puts "Enter a number"
+#   number = gets.chomp
+#   if number.to_i > 10
+#     break
+#   end
+# end
+
+
+# 7. Write a while loop that prints the numbers 50 to 70.
+
+# number = 50
+# while number <= 70
+#   p number
+#   number += 1
+# end
+
+# 8. Write a while loop that prints the phrase "Around the world" 144 times.
+
+# count = 0
+# while count < 144
+#   puts "Around the world"
+#   count += 1
+# end
+
+# 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+# while true
+#   puts "Enter a word:"
+#   word = gets.chomp
+#   if word.length > 5
+#     break
+#   end
+# end
+
+# 10. Write a while loop that prints the even numbers from 2 to 40.
+
+# count = 2
+# while count <= 40
+#   p count
+#   count += 1
+# end
+
+# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+# array = ["cat", "dog", "bird"]
+# array << "goose"
+# array << "dumb"
+# p array
+
+# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+# array = ["a", "b", "c", "d"]
+# array[1] = 22
+# p array
+
+# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+# numbers = [5,4,3,2,1]
+# index = 0
+# while index < numbers.length
+#   p numbers[index]
+#   index += 1
+# end
+
+
+# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+# array = [1]
+# array << 2
+# array << 3
+# array << 4
+# p array
+
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+# array = ["cat", "bird", "dog"]
+# array[2] = array[2].upcase
+# p array
+
+# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+# array = ["cathy", "susie", "boobysue"]
+# i = 0
+# while i < array.length
+#   p array[i]
+#   i += 1
+# end
+
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# array = ["this", "that"]
+# array << "theother"
+# p array
+
+# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+# array = [5,4,3,2,1]
+# array[0] = array[0] * 10
+# p array
+
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+# array = [1,2]
+# i = 0
+# while i < array.length
+#   p array[i]
+#   i += 1
+# end
+
+
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+# hash = { "first_name" => "Susie", "last_name" => "Baker", "email" => "sbaker@test.com" }
+# p hash["first_name"]
+# p hash["last_name"]
+# p hash["email"]
+
+
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+# array = [
+#   { "first_name" => "Poopsy", "last_name" => "Dropsy"},
+#   { "first_name" => "Daisy", "last_name" => "Dipsy"},
+#   { "first_name" => "Farty", "last_name" => "McGunderson"}
+# ]
+# p array[0]["first_name"]
+# p array[0]["last_name"]
+
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+# menu = { "burger" => 4, "drink" => 2, "salad" => 3}
+# menu["fries"] = 2
+# p menu
+
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+# book = { "title" => "The Way Shit Happens", "author" => "Smeagle Shmoop", "page_count" => 69, "language" => "English"}
+
+# p book["title"]
+
+
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+# array = [
+#   { "title" => "The Way Shit Happens", "author" => "Smeagle Shmoop" },
+#   { "title" => "Dumb Farmers", "author" => "Bernstein" },
+#   { "title" => "Everyone Poops", "author" => "Mr. Brown" }
+# ]
+
+# p array[2]["author"]
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+# states = { "Cali" => "Sacramento", "Illinois" => "Springfield", "New York" => "Albany" }
+# states["Tennessee"] = "Nashville"
+# p states
+
+
+
