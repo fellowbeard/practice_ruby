@@ -70,8 +70,13 @@
 
 // 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-var words = { stomp: "to thrash", alight: "to light up" };
-words.happy = "feeling great";
-console.log(words);
+// var words = { stomp: "to thrash", alight: "to light up" };
+// words.happy = "feeling great";
+// console.log(words);
 
 // 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+var shirt = { brand: "husky", color: "purple", size: "xxl" };
+console.log(shirt.brand);
+console.log(shirt.color);
+console.log(shirt.size);
