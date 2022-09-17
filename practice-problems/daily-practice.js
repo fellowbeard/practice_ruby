@@ -44,15 +44,20 @@
 
 // 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-var states = {
-  texas: "austin",
-  newyork: "albany",
-  cali: "sacramento",
-};
-states["nevada"] = "reno";
-console.log(states);
+// var states = {
+//   texas: "austin",
+//   newyork: "albany",
+//   cali: "sacramento",
+// };
+// states["nevada"] = "reno";
+// console.log(states);
 
 // 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+var laptops = { brand: "apple", model: "macbook", year: 1986 };
+console.log(laptops.brand);
+console.log(laptops.model);
+console.log(laptops.year);
 
 // 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
