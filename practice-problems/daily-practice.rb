@@ -472,8 +472,8 @@
 
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
-shirt = { "brand" => "husky", "color" => "red", "size" => "lg" }
+# shirt = { "brand" => "husky", "color" => "red", "size" => "lg" }
 
-p shirt["brand"]
-p shirt["color"]
-p shirt["size"]
+# p shirt["brand"]
+# p shirt["color"]
+# p shirt["size"]
