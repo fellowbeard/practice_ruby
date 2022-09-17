@@ -455,14 +455,18 @@
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-laptops = [
-  { "brand" => "toshiba", "model" => "1986"},
-  { "brand" => "apple", "model" => "2010"},
-  { "brand" => "hp", "model" => "2005"}
-]
+# laptops = [
+#   { "brand" => "toshiba", "model" => "1986"},
+#   { "brand" => "apple", "model" => "2010"},
+#   { "brand" => "hp", "model" => "2005"}
+# ]
 
-p laptops[1]["model"]
+# p laptops[1]["model"]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+words = { "alight" => "to brighten", "flog" => "to beat" }
+words["stomp"] = "to thrash"
+
+p words
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
