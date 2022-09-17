@@ -27,13 +27,20 @@
 
 // 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
-var book = { title: "to whomever", author: "this bitch", pagecount: 65, language: "english" };
-console.log("title");
-console.log("author");
-console.log("pagecount");
-console.log("language");
+// var book = { title: "to whomever", author: "this bitch", pagecount: 65, language: "english" };
+// console.log("title");
+// console.log("author");
+// console.log("pagecount");
+// console.log("language");
 
 // 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+var books = [
+  { title: "this book", author: "her" },
+  { title: "that book", author: "him" },
+  { title: "the other book", author: "they/them" },
+];
+console.log(books[2].author);
 
 // 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
