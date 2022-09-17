@@ -35,14 +35,22 @@
 
 // 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-var books = [
-  { title: "this book", author: "her" },
-  { title: "that book", author: "him" },
-  { title: "the other book", author: "they/them" },
-];
-console.log(books[2].author);
+// var books = [
+//   { title: "this book", author: "her" },
+//   { title: "that book", author: "him" },
+//   { title: "the other book", author: "they/them" },
+// ];
+// console.log(books[2].author);
 
 // 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+var states = {
+  texas: "austin",
+  newyork: "albany",
+  cali: "sacramento",
+};
+states["nevada"] = "reno";
+console.log(states);
 
 // 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
