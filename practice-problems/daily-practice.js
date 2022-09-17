@@ -54,12 +54,19 @@
 
 // 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-var laptops = { brand: "apple", model: "macbook", year: 1986 };
-console.log(laptops.brand);
-console.log(laptops.model);
-console.log(laptops.year);
+// var laptops = { brand: "apple", model: "macbook", year: 1986 };
+// console.log(laptops.brand);
+// console.log(laptops.model);
+// console.log(laptops.year);
 
 // 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+var laptops = [
+  { brand: "apple", model: "macbook" },
+  { brand: "hp", model: "pooper" },
+  { brand: "toshiba", model: "something" },
+];
+console.log(laptops[1]["model"]);
 
 // 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
