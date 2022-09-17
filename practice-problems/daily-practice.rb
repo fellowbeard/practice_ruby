@@ -440,12 +440,18 @@
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-states = { "alaska" => "juno", "cali" => "sacramento", "arizona" => "phoenix" }
-states["texas"] = "austin"
+# states = { "alaska" => "juno", "cali" => "sacramento", "arizona" => "phoenix" }
+# states["texas"] = "austin"
 
-p states
+# p states
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+laptop = { "brand" => "apple", "model" => "macbook", "year" => 2020 }
+
+p laptop["brand"]
+p laptop["model"]
+p laptop["year"]
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
