@@ -396,7 +396,8 @@
 
 # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-# hash = { "first_name" => "Susie", "last_name" => "Baker", "email" => "sbaker@test.com" }
+# hash = { "first_name" => "Betty", "last_name" => "White", "email" => "bwhite@test.com" }
+
 # p hash["first_name"]
 # p hash["last_name"]
 # p hash["email"]
@@ -405,119 +406,36 @@
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
 # array = [
-#   { "first_name" => "Poopsy", "last_name" => "Dropsy"},
-#   { "first_name" => "Daisy", "last_name" => "Dipsy"},
-#   { "first_name" => "Farty", "last_name" => "McGunderson"}
+#   { "firstname" => "Susie" },
+#   { "firstname" => "Betty" },
+#   { "firstname" => "Sharon" }
 # ]
-# p array[0]["first_name"]
-# p array[0]["last_name"]
+
+# p array[0]["firstname"]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-# menu = { "burger" => 4, "drink" => 2, "salad" => 3}
-# menu["fries"] = 2
+# menu = { "burger" => 5, "drink" => 2, "fries" => 3 }
+# menu["salad"] = 4
 # p menu
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
-# book = { "title" => "The Way Shit Happens", "author" => "Smeagle Shmoop", "page_count" => 69, "language" => "English"}
+book = { "title" => "how to be a loser", "author" => "some loser", "pages" => 12, "language" => "english" }
 
-# p book["title"]
-
+p book["title"]
+p book["author"]
+p book["pages"]
+p book["language"]
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-# array = [
-#   { "title" => "The Way Shit Happens", "author" => "Smeagle Shmoop" },
-#   { "title" => "Dumb Farmers", "author" => "Bernstein" },
-#   { "title" => "Everyone Poops", "author" => "Mr. Brown" }
-# ]
-
-# p array[2]["author"]
-
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-# states = { "Cali" => "Sacramento", "Illinois" => "Springfield", "New York" => "Albany" }
-# states["Tennessee"] = "Nashville"
-# p states
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-# def double(number)
-#   number * 2
-# end
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-# p double(10)
-
-# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
-
-# def capital(string)
-#   string.upcase
-# end
-
-# p capital("shit")
-
-# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
-
-# def subtract(num1, num2)
-#   num1 - num2
-# end
-
-# p subtract(6, 5)
-
-# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
-
-# def mult(number)
-#   number * number
-# end
-
-# p mult(2)
-
-# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
-
-# def first_lett(string)
-#   string[0]
-# end
-
-# p first_lett("poop")
-
-# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
-
-# def combine(st1, st2, st3)
-#   "#{st1} #{st2} #{st3}"
-# end
-
-# p combine("mister", "poopy", "butthole")
-
-# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
-
-# def convert(number)
-#   number.to_i
-# end
-
-# p convert(10)
-
-# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
-
-# def repeat(string)
-#   string * 5
-# end
-
-# p repeat("shutup")
-
-# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
-
-# def average(num1, num2, num3)
-#   (num1 + num2 + num3) / 3
-# end
-
-# p average(3, 3, 3)
-
-# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
-
-# def add(num)
-#   (num * 10) + 30
-# end
-
-# p add(10)
-
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
