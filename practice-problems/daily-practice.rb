@@ -465,8 +465,15 @@
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-words = { "alight" => "to brighten", "flog" => "to beat" }
-words["stomp"] = "to thrash"
+# words = { "alight" => "to brighten", "flog" => "to beat" }
+# words["stomp"] = "to thrash"
 
-p words
+# p words
+
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = { "brand" => "husky", "color" => "red", "size" => "lg" }
+
+p shirt["brand"]
+p shirt["color"]
+p shirt["size"]
