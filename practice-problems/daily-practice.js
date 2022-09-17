@@ -17,15 +17,21 @@
 
 // 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-var menu = {
-  burger: 5,
-  drink: 3,
-  fries: 2,
-};
-menu["salad"] = 5;
-console.log(menu);
+// var menu = {
+//   burger: 5,
+//   drink: 3,
+//   fries: 2,
+// };
+// menu["salad"] = 5;
+// console.log(menu);
 
 // 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+var book = { title: "to whomever", author: "this bitch", pagecount: 65, language: "english" };
+console.log("title");
+console.log("author");
+console.log("pagecount");
+console.log("language");
 
 // 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
