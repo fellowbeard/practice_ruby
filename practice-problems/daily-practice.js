@@ -83,19 +83,25 @@
 
 // 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
 
-var words = ["yellow", "red", "blue"];
-words.push("green");
-words.push("teal");
-console.log(words);
+// var words = ["yellow", "red", "blue"];
+// words.push("green");
+// words.push("teal");
+// console.log(words);
 
 // 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
 
-var letters = ["b", "c", "d", "e"];
-letters[1] = 55;
-console.log(letters);
+// var letters = ["b", "c", "d", "e"];
+// letters[1] = 55;
+// console.log(letters);
 
 // 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
+var numbers = [5, 4, 3, 2, 1];
+var index = 0;
+while (index < numbers.length) {
+  console.log(numbers[index]);
+  index += 1;
+}
 // 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
 // 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
