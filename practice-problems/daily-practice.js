@@ -204,13 +204,19 @@
 
 // 7. Write a while loop that prints the numbers 50 to 70.
 
-var num = 50;
-while (num <= 70) {
-  console.log(num);
-  num += 1;
-}
+// var num = 50;
+// while (num <= 70) {
+//   console.log(num);
+//   num += 1;
+// }
 
 // 8. Write a while loop that prints the phrase "Around the world" 144 times.
+
+var count = 0;
+while (count <= 144) {
+  console.log("Around the world");
+  count += 1;
+}
 
 // 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
