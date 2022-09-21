@@ -229,8 +229,8 @@
 
 // 10. Write a while loop that prints the even numbers from 2 to 40.
 
-var count = 2;
-while (count <= 40) {
-  console.log(count);
-  count += 2;
-}
+// var count = 2;
+// while (count <= 40) {
+//   console.log(count);
+//   count += 2;
+// }
