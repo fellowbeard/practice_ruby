@@ -763,3 +763,21 @@
 # p double([2, 4, 6, 8])
 
 
+# Write a function that returns the greatest value from an array of numbers.
+
+# Input: [5, 17, -4, 20, 12]
+# Output: 20
+
+def greatest (array)
+  nums = 0
+  i = 0
+  while i < array.length
+    if nums < array[i]
+      nums = array[i]
+    end
+    i += 1
+  end
+  return nums
+end
+
+p greatest([5, 17, -4, 20, 12])
