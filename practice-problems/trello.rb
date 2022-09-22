@@ -839,3 +839,22 @@
 # end
 
 # p moveover([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+def reverse (string)
+  i = 0
+  new_string = ""
+
+  while i < string.length
+    new_string = string[i] + new_string
+    i += 1 
+  end
+
+  return new_string
+end
+
+p reverse("abcde")
