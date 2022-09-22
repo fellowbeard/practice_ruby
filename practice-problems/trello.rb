@@ -768,16 +768,33 @@
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
 
-def greatest (array)
-  nums = 0
-  i = 0
-  while i < array.length
-    if nums < array[i]
-      nums = array[i]
-    end
-    i += 1
-  end
-  return nums
-end
+# def greatest (array)
+#   nums = 0
+#   i = 0
+#   while i < array.length
+#     if nums < array[i]
+#       nums = array[i]
+#     end
+#     i += 1
+#   end
+#   return nums
+# end
 
-p greatest([5, 17, -4, 20, 12])
+# p greatest([5, 17, -4, 20, 12])
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# # Output: 24
+
+# def reduce (array)
+#   i = 1
+#   sum = array[0]
+#   while i < array.length
+#     sum = sum * array[i]
+#     i += 1
+#     end
+#   return sum
+# end
+
+# p reduce([1, 2, 3, 4])
