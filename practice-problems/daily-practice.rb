@@ -38,14 +38,18 @@
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
-array = ["michele", "susan", "barbra"]
-index = 0
-while index < array.length
-  p array[index]
-  index += 1
-end
+# array = ["michele", "susan", "barbra"]
+# index = 0
+# while index < array.length
+#   p array[index]
+#   index += 1
+# end
 
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+array = ["bubbles", "soap"]
+array << "clean"
+p array
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
