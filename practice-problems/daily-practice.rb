@@ -1,79 +1,23 @@
-# 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
 
-# first = "sally"
-# last = "may"
+puts "Enter a word: "
+word = gets.chomp.upcase
+p word
 
-# p first + " " + last
+# 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
 
-# 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
 
-# first = "sally"
-# last = "may"
+# 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
-# p "#{first} #{last}"
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
-# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
-# puts "Enter a word: "
-# word = gets.chomp
-# if word == "marco"
-#   puts "polo"
-# end 
+# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
-# # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
-# color1 = "blue"
-# color2 = "yellow"
-# color3 = "red"
+# 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
-# puts "My favorite colors are " + color1 + ", " + color2 + ", and " + color3 + "."
-
-
-# 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
-
-# color1 = "blue"
-# color2 = "yellow"
-# color3 = "red"
-
-# puts "My favourite colors are #{color1}, #{color2}, and #{color3}."
-
-# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
-
-# puts "Enter a first name: "
-# word = gets.chomp
-# if word != "Santa"
-#   puts "You are not Santa."
-# end
-
-# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
-
-# title = "everybody cries"
-# author = "sally may joe"
-
-# puts "I read a great book by " + author + "." + " It's called " + title + "."
-
-# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
-
-# title = "everybody cries"
-# author = "sally may joe"
-
-# puts "I read a great book by #{author}. It's called #{title}." 
-
-# 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
-
-# puts "Enter a password: "
-# word = gets.chomp
-
-# if word == "joshua"
-#   puts "Shall we play a game?"
-# else
-#   puts "Access Denied"
-# end
-
-# 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
-
-city1 = "new york"
-city2 = "atlanta"
-city3 = "new orleans"
-
-puts "I've never lived in " + city2 + ", but I've lived in both " + city1 + " and " + city3
+# 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
