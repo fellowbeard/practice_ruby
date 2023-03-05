@@ -27,6 +27,14 @@ p array[0]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
+menu = {
+  "burger" => 5,
+  "fries" => 3,
+  "drink" => 2,
+}
+menu["salad"] = 4
+p menu
+
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
