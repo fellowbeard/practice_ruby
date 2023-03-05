@@ -59,11 +59,15 @@
 
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
-array = [1,2]
-index = 0
-while index < array.length
-  p array[index]
-  index += 1
-end
+# array = [1,2]
+# index = 0
+# while index < array.length
+#   p array[index]
+#   index += 1
+# end
 
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+array = ["iran", "iraq", "turkey"]
+array << "saudi arabia"
+p array
