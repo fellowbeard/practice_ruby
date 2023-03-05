@@ -54,11 +54,20 @@
 
 # 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
 
-title = "everybody cries"
-author = "sally may joe"
+# title = "everybody cries"
+# author = "sally may joe"
 
-puts "I read a great book by #{author}. It's called #{title}." 
+# puts "I read a great book by #{author}. It's called #{title}." 
 
 # 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+puts "Enter a password: "
+word = gets.chomp
+
+if word == "joshua"
+  puts "Shall we play a game?"
+else
+  puts "Access Denied"
+end
 
 # 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
