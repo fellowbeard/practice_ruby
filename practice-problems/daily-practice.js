@@ -275,9 +275,9 @@
 
 // 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 
-var firstName = "Joe";
-var lastName = "Shmo";
-console.log(firstName + " " + lastName);
+// var firstName = "Joe";
+// var lastName = "Shmo";
+// console.log(firstName + " " + lastName);
 
 // 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the //{} operator).
 
