@@ -14,13 +14,21 @@
 
 # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
-puts "Enter a word: "
-word = gets.chomp
-if word == "marco"
-  puts "polo"
-end 
+# puts "Enter a word: "
+# word = gets.chomp
+# if word == "marco"
+#   puts "polo"
+# end 
 
 # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+color1 = "blue"
+color2 = "yellow"
+color3 = "red"
+
+puts "My favorite colors are " + color1 + ", " + color2 + ", and " + color3 + "."
+
+
 
 # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
