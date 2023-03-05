@@ -32,15 +32,28 @@
 
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
-puts "Enter two words: "
-word1 = gets.chomp
-word2 = gets.chomp
+# puts "Enter two words: "
+# word1 = gets.chomp
+# word2 = gets.chomp
 
-puts "#{word1.upcase} #{word2.upcase}"
+# puts "#{word1.upcase} #{word2.upcase}"
 
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
+# puts "Enter a word: "
+# word = gets.chomp
+# p word.length
+
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+puts "Enter a number: "
+num = gets.chomp.to_i
+if num < 0
+  puts "Thats a negative number!"
+else
+  puts "That's positive."
+end
+
 
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
