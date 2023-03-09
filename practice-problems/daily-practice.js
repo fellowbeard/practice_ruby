@@ -62,12 +62,16 @@
 
 // # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
 
-let array = ["guitar", "piano", "drums"];
-array.push("cowbell");
-array.push("flute");
-console.log(array);
+// let array = ["guitar", "piano", "drums"];
+// array.push("cowbell");
+// array.push("flute");
+// console.log(array);
 
 // # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+let letters = ["a", "b", "c", "d"];
+letters[1] = 34;
+console.log(letters);
 
 // # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
