@@ -177,6 +177,16 @@
 //     break;
 //   }
 // }
+
+// const readline = require(`readline`);
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+// rl.question(`Enter your name: `, (name) => {
+//   console.log(`Hello, ${name}!`);
+//   rl.close();
+// });
 // 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
 // var count = 0;
@@ -245,6 +255,14 @@
 // }
 
 // 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+let num = 22;
+if (num < 10) {
+  console.log(-1);
+} else if (num > 10) {
+  console.log(1);
+} else {
+  console.log(0);
+}
 
 // 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
 
@@ -281,7 +299,13 @@
 
 // 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the //{} operator).
 
+// var firstName = "Jeff";
+// var lastName = "Stienstra";
+// console.log(`Hello, my name is ${firstName} ${lastName}`);
+
 // 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+// var input = window.prompt("Enter a word: ");
 
 // 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
